@@ -1,0 +1,4 @@
+This folder contains all data used in our experiment.
+
+1.Please run 'my_feature_extract.m' to create database features for oxford5k and paris6k.
+2.Please run 'my_mac_query_process.m' to pre-process query data for oxford5k and paris6k.
