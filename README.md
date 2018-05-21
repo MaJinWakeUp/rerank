@@ -1,5 +1,6 @@
 # What is This
-This is a Matlab implementation of our paper  ***Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion***.  
+This is a Matlab implementation of our paper:
+    ***Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion***.  
 Noting that in our paper, we combined our re-rank method with four different image search approaches, namely, BOW, TEMB, RMAC and ASMK. While this repository is only an example  of **RMAC**. If you want to use our re-rank method in other approaches, please add `cast_rerank.m` function after initial rank step as in `test_ramc.m`.  
 
 In this repository, we implement:
