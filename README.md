@@ -1,5 +1,5 @@
 # What is This
-This is a Matlab implementation of our paper  ***Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion***.  Noting that in our paper, we combined our re-rank method with four different image search approaches, namely, BOW, TEMB, RMAC and ASMK. While this repository is an example  of **RMAC**. If you want to use our re-rank method in other approaches, please add `cast_rerank.m` function after initial rank step as in `test_ramc.m`.  
+This is a Matlab implementation of our paper  ***Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion***.  Noting that in our paper, we combined our re-rank method with four different image search approaches, namely, BOW, TEMB, RMAC and ASMK. While this repository is only an example  of **RMAC**. If you want to use our re-rank method in other approaches, please add `cast_rerank.m` function after initial rank step as in `test_ramc.m`.  
 In this repository, we implement:
 * A modified version of RMAC. (For original RMAC, see [gtolias/rmac][7])
 * Our re-rank method SP and FU. Results of  QE and Pagerank are also presented.
@@ -26,7 +26,9 @@ In this repository, we implement:
 ### Note 
 * During step 4.i and 4.ii, you may need to change variables `data_folder` to correct path where you store dataset images. And you also need to change variables `dataset` to get features of different dataset.  
 * For Oxford105k and Paris106k, please run `my_feature_100k.m` and `test_100k.m`.
-
+***
+**If you have any question, please contact:**  
+*Jin Ma, m799133891@stu.xjtu.edu.cn* or *Shanmin Pang, pangsm@xjtu.edu.cn*
 
 [1]: http://www.vlfeat.org/matconvnet/ "matconvnet home"
 [2]: https://gforge.inria.fr/projects/yael/ "yael home"
