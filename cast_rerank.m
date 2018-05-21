@@ -1,4 +1,10 @@
 % cast rerank
+% output: ranks_**      different rank results of different reranking methods
+% input:  ranks         original rank results
+%         x             dataset features of column vector
+%         q             query features of column vector
+%         rerank        number of top ranked images waiting for rerank, equals to k in our paper
+% alpha, init, fre_thre are three parameters used in our paper
 function [ranks_FU, ranks_SP, ranks_QE, ranks_PR] = cast_rerank(ranks, x , q , rerank)
 alpha = 0.8;
 init = 0.99;
