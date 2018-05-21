@@ -7,13 +7,13 @@ cd ../mac
 addpath ./utils
 
 data_folder = '/home/mj/imagesearch/'; % oxford5k/ and paris6k/ should be in here
-dataset_test 				= 'oxford5k';     % dataset to evaluate on 
+dataset 				= 'oxford5k';     % dataset to evaluate on 
 
 % config files for Oxford and Paris datasets
-gnd_test = load(['./data/gnd_', dataset_test, '.mat']);    
+gnd_test = load(['./data/gnd_', dataset, '.mat']);    
 
 % image files are expected under each dataset's folder
-im_folder_test = [data_folder, dataset_test, '/'];
+im_folder_test = [data_folder, dataset, '/'];
 
 % choose pre-trained CNN model
 modelfn = 'imagenet-vgg-verydeep-16.mat';  lid = 31;		% use VGG
@@ -33,5 +33,5 @@ else
 	qvecs = cellfun(@(x) vecpostproc(rmac_regionvec(x, net, L)), qim, 'un', 0);
 end
 
-psave = ['./data/query_' dataset_test];
+psave = ['./data/query_' dataset];
 save(psave,'qvecs')
