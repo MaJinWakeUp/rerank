@@ -1,2 +1,2 @@
-# rerank
-This is the Matlab code for our paper "Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion"
+# What is This
+This is a Matlab implementation of our paper ***Improving Object Retrieval Quality by Integration of Similarity Propagation and Query Expansion***.
