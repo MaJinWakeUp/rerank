@@ -17,8 +17,13 @@ This is a Matlab implementation of our paper  ***Improving Object Retrieval Qua
 3. Download dataset images.
 4. Run experiment.
     1. Run `my_feaure_extract.m` to extract features.
-    2. Run `my_query_process.m` to pre-process qury images.
+    2. Run `my_mac_query_process.m` to pre-process qury images.
     3. Run `test_rmac.m` to get results.
+    
+### Note 
+* During this experiment, you may need to change variables `data_folder` to correct path where you store dataset images. And you also need to change variables `dataset` to get features of different dataset.  
+* For Oxford105k and Paris106k, please run `my_feature_100k.m` and `test_100k.m`.
+
 
 [1]: http://www.vlfeat.org/matconvnet/ "matconvnet home"
 [2]: https://gforge.inria.fr/projects/yael/ "yael home"
