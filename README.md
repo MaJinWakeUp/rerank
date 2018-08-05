@@ -12,7 +12,7 @@ In this repository, we implement:
 # Prerequisites
 ## Dependence
 * [Matconvnet][1]. This is a MATLAB toolbox implementing CNNs for computer vision applications.
-* Optional but recommended: [Library yael][2]. Yael is a library implementing computationally intensive functions used in large scale image retrieval. Functions needed in this experiment are already contained in folder `utils`.
+* Optional but recommended: [Library yael][2]. Yael is a library implementing computationally intensive functions used in large scale image retrieval. ( Functions needed in this experiment are already contained in folder `utils`. ) 
 ## Dataset
 * [Oxford5k][3] consists of 5062 images collected from Flickr by searching for particular Oxford landmarks.
 * [Paris6k][4] consists of 6412 images collected from Flickr by searching for particular Paris landmarks. In our experiments, we delete the 20 corrupted images and use the other **6392** images.
