@@ -43,7 +43,7 @@ for i = 1:num_query
     sum_A = sum(A)/alpha;
     PW = I - bsxfun(@rdivide,A,sum_A);
     PW = PW\I - I;
-    PW = PW/4;
+    PW = PW*(1-alpha)/alpha;
     
     %% PR
     Root_PW = sqrt(PW);
